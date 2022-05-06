@@ -6,6 +6,16 @@
   color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* SECTION */
+
+.section .inner {
+  max-width: 980px;
+}
+
 /* 버튼 */
 .btn {
   color: #403d34;
@@ -65,4 +75,89 @@
 }
 .input--text::-moz-input-placeholder {
   color: #cacaca;
+}
+
+/* FLOAT CLEARFIX */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
+header {
+  border-bottom: 0.5px solid #312b02;
+  box-shadow: 0 0 5px rgbx(0, 0, 0, 0.75);
+}
+
+/* HEADER */
+header .inner {
+  height: 80px;
+  margin: 0 auto;
+}
+
+.logoimg {
+  width: 55px;
+  height: 40px;
+  margin: 0 10px 0 15px;
+}
+
+header .menu-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .menu-group a {
+  display: block;
+  padding: 10px;
+  color: #483f04;
+}
+
+header .menu-group a:hover {
+  color: #717845;
+}
+
+header .menu-list {
+  display: flex;
+}
+
+.sign-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .button-group {
+  order: 2;
+}
+header .input--text {
+  order: 1;
+  margin-right: 8px;
+  font-size: 14px;
+}
+header .login-menu ul {
+  display: flex;
+  order: 0;
+  margin-right: 10px;
+}
+
+header .login-menu li {
+  font-size: 13px;
+}
+header .login-menu li a {
+  display: block;
+  padding: 8px;
+  color: #483f04;
+}
+
+header .login-menu li a:hover {
+  color: #717845;
 }

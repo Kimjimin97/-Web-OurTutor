@@ -12,8 +12,14 @@ a {
 
 /* SECTION */
 
+.section {
+  position: relative;
+}
+
 .section .inner {
   max-width: 980px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* 버튼 */
@@ -160,4 +166,77 @@ header .login-menu li a {
 
 header .login-menu li a:hover {
   color: #717845;
+}
+/* 
+.section--visual {
+  height: 600px;
+  background-image: url("../imgs/wit.png");
+  background-repeat: none;
+  background-position: bottom left;
+  background-size: cover;
+} */
+
+.section--visual {
+  height: 500px;
+  background-image: url("../imgs/wittgenstein.jpeg");
+  background-position: top left;
+  /* background-size: cover; */
+}
+
+.section--visual::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.section--visual .inner {
+  display: flex;
+  padding: 160px 0;
+}
+
+.section--visual .summary {
+  margin-right: 5px;
+}
+
+.section--visual .summary__title {
+  color: #efece7;
+  font-size: 40px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  line-height: 1.12;
+}
+
+.section--visual .summary__description {
+  color: #efece7;
+  font-size: 18px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+#sign-form .input--text {
+  width: 100%;
+  height: 30px;
+}
+
+#sign-form li {
+  margin-bottom: 8px;
+}
+
+#sign-form .caption {
+  font-size: 13px;
+  color: #efece7;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#sign-form [type="submit"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 25px;
+  font-size: 20px;
+  margin-top: 4px;
+  justify-content: center;
+  padding: 0 25px;
 }

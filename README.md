@@ -9,7 +9,7 @@ OurTutor 웹사이트
 - 3개의 text box를 li 태그를 활용해서 정렬시킴
 
 - main menu와 sing menu 정렬시 float를 활용
-float를 쓰기 위해서는 cleafix를 꼭 부모에 넣어주어야함
+float를 쓰기 위해서는 clearfix를 꼭 부모에 넣어주어야함
 - ord를 활용해서 class의 정렬 우선 순위를 확인할 수 있음
 
 
@@ -23,6 +23,6 @@ div 태그 안에 넣어준다.
 
 ## 시도 (5/10)
 - 반응형으로 만들기 위해서 flex의 이용이 아닌 float 이용을 사용하기도 한다.
-- gird를 이용해서 설명 section을 수평 4개의 칸에 들어가도록 만들어 주었다.
+- grid를 이용해서 설명 section을 수평 4개의 칸에 들어가도록 만들어 주었다.
 - 웹 접근성을 고려해서 footer header와 같은 정적 요소를 설정해 주었다. 
 - 처음에는 왜 쓰는지 몰랐지만 웹 접근성 때문임을 알았다.
